@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,16 +7,45 @@
     android:background="#F5F5F5"
     tools:context=".MainActivity">
 
-    <Button
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/buttons"
-        android:bottomLeftRadius="10dp"
-        android:bottomRightRadius="10dp"
-        android:text="Iniciar sesion"
-        android:topLeftRadius="10dp"
-        android:topRightRadius="10dp"
-        tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="145dp" />
+        android:layout_marginTop="500dp"
+        android:gravity="center"
+        android:id="@+id/layoutIni"
+        >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/btnIni"
+            android:layout_width="331dp"
+            android:layout_height="56dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/rounded_corner"
+            android:text="Iniciar Sesion"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="350dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/layoutIni"
+        android:id="@+id/layoutRegis"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="331dp"
+            android:layout_height="56dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/registerbtn"
+            android:text="Registrarse"
+            android:textColor="#375F5D"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="433dp" />
+    </LinearLayout>
+</RelativeLayout>
