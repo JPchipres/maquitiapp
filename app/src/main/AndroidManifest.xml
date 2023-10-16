@@ -13,7 +13,16 @@
         android:theme="@style/Theme.Maquitiapp"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".registro_asociacion"
+            android:exported="false" />
+        <activity
+            android:name=".main_sin_registro_asociacion"
+            android:exported="false" />
+        <activity
+            android:name=".main_sin_registro"
+            android:exported="false" />
+        <activity
+            android:name=".perfil_usuario"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

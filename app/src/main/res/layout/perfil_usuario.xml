@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gris"
+    tools:context=".perfil_usuario">
+
+    <Button
+        android:id="@+id/regresar"
+        style="@style/Widget.Material3.ExtendedFloatingActionButton.Surface"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/white"
+        android:rotation="90"
+        android:text="v"
+        android:textColor="@color/black"
+        android:textSize="22dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regresar"
+        android:id="@+id/img_perfil"
+        android:src="@drawable/foto_perfil"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ln_nombre_perfil"
+        android:layout_below="@+id/img_perfil">
+
+        <Button
+            android:id="@+id/cambio_de_nombre"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:drawableLeft="@drawable/icono_lapiz"
+            android:padding="0dp"
+            android:background="#00000000"/>
+        <TextView
+            android:fontFamily="@font/urbanist_semibold"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nombre_perfil"
+            android:text="Nombre Apellido Apellido"/>
+    </LinearLayout>
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/urbanist_semibold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titulo"
+        android:layout_below="@+id/ln_nombre_perfil"
+        android:text="Historial de ayuda"
+        android:textSize="22dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titulo"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#1E232C">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:background="#18C07A"
+            android:id="@+id/monto1"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="monto: $12.50"
+                android:textColor="@color/black"
+                android:fontFamily="@font/urbanist_medium"
+                android:gravity="center"/>
+            <TextView
+                android:fontFamily="@font/urbanist_medium"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="fecha: 17/12/2002"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
